@@ -1,8 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>verba</title>
-<link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verba.uk</title>
+    <link rel="icon" href="data:,">
+
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            min-height: 100dvh;
+            position: relative;
+            background: white;
+            font-family: system-ui;
+        }
+
+        .logo {
+            position: absolute;
+            top: 17.22%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #787878;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #000000;
+            }
+
+            .logo {
+                color: #787878;
+            }
+        }
+    </style>
 </head>
-<body></body>
+<body>
+    <div class="logo"></div>
+</body>
 </html>
